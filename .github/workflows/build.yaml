@@ -50,7 +50,6 @@ jobs:
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
-
       - name: Setup Kustomize
         uses: imranismail/setup-kustomize@v1
 
@@ -77,5 +76,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
           git commit -am "Update image tag"
-          git push -u origin master
+          git push -u origin main
 
