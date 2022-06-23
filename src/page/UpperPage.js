@@ -29,8 +29,8 @@ const useStyles = makeStyles((theme) => ({
 function UpperPage() {
     const classes = useStyles();
     const [ data, setState ] = useState({outcome:[]})
-    
-    const url = 'http://k8s-default-backendi-6566bc7d31-13073286.ap-northeast-2.elb.amazonaws.com/services/all'
+
+    const url = 'http://k8s-default-backendi-6566bc7d31-20899281.ap-northeast-2.elb.amazonaws.com/services/all'
     
     useEffect(() => {
       const fetchData = async () => {
